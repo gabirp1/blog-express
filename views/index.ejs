@@ -5,11 +5,11 @@
 
 
         <div class="blogs content">
-            <h2>Todos los Tests</h2>
+            <h2>Todos los Coches</h2>
             <% if (blogs.length > 0) { %>
-            <% blogs.forEach(test => { %>
+            <% blogs.forEach(blog => { %>
 
-            <h3 class="title"><%= coche.marca %></h3>
+            <h3 class="title"><%= blog.marca %></h3>
             <ol>
 
                 <li><input type="radio" name=<%= blog.marca %>>
