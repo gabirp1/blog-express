@@ -1,8 +1,8 @@
 const express = require('express');
-const Test = require('./models/blog');
+const Blog = require('./models/blog');
 
 require('./db/mongoose')
-const testRouter = require('./routers/blog')
+const blogRouter = require('./routers/blog')
 
 const port = process.env.PORT
 
@@ -25,11 +25,11 @@ app.use(express.json()); // Parse JSON bodies
 
 app.get('/', async (req, res) => {
   try{
-    const tests =await Test.find({})
-    res.render('index', { tests: tests, titulo: 'Índice' });
+    const blogs =await Blog.find({})
+    res.render('index', { blogs: blogs, titulo: 'Índice' });
   }catch (e){
 
-  res.render('index', { tests: [], titulo: 'Índice' });
+  res.render('index', { blogs: [], titulo: 'Índice' });
   }
 });
 
