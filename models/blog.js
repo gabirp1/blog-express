@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const Coche = mongoose.model('Coche', {
+const Blog = mongoose.model('Coche', {
     modelo:{
         title: modelo,
         type: String,
