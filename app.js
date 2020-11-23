@@ -44,7 +44,7 @@ app.post('/form', (req,res) => {
 })
 
 app.use(express.json())
-app.use('/api', testRouter)
+app.use('/api', blogRouter)
 
 
 
