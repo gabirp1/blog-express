@@ -1,35 +1,31 @@
 const mongoose = require('mongoose')
 
-const Blog = mongoose.model('Coche', {
-    modelo:{
-        title: modelo,
+const Blog = mongoose.model('Blog', {
+    marca: {
         type: String,
         required: true,
         trim: true,
         lowercase: true
     },
-    marca:{
-        title: marca,
+    modelo: {
         type: String,
         required: true,
         trim: true,
         lowercase: true
     },
-    cilindrada:{
-        title: cilindrada,
+    cilindrada: {
         type: String,
         required: true,
         trim: true,
         lowercase: true
     },
-    combustible:{
-        title: combustible,
+    combustible: {
         type: String,
         required: true,
         trim: true,
         lowercase: true
     },
-   
+
 })
 
-module.exports = Coche
+module.exports = Blog
