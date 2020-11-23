@@ -1,0 +1,39 @@
+<%- include('./partials/header.ejs') %>
+<main>
+    <section>
+
+
+
+        <div class="coches content">
+            <h2>Todos los Tests</h2>
+            <% if (coches.length > 0) { %>
+            <% coches.forEach(test => { %>
+
+            <h3 class="title"><%= coche.marca %></h3>
+            <ol>
+
+                <li><input type="radio" name=<%= coche.marca %>>
+                    <label for="answer1"> <%= coche.modelo %> </label></li>
+                <li><input type="radio" name=<%= coche.marca %>>
+                    <label for="answer2"> <%= coche.cilindrada %> </label></li>
+                <li><input type="radio" name=<%= coche.marca %>>
+                    <label for="answer3"> <%= coche.combustible %> </label></li>
+              
+
+
+
+            </ol>
+
+
+
+            <% }) %>
+            <% } else { %>
+            <p>No hay nada que mostrar...</p>
+            <% } %>
+
+        </div>
+
+
+    </section>
+</main>
+<%- include('./partials/footer.ejs') %>
