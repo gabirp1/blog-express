@@ -9,21 +9,21 @@ const Blog = mongoose.model('Coche', {
         lowercase: true
     },
     marca:{
-        title: marca
+        title: marca,
         type: String,
         required: true,
         trim: true,
         lowercase: true
     },
     cilindrada:{
-        title: cilindrada
+        title: cilindrada,
         type: String,
         required: true,
         trim: true,
         lowercase: true
     },
     combustible:{
-        title: combustible
+        title: combustible,
         type: String,
         required: true,
         trim: true,
