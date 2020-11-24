@@ -25,6 +25,7 @@ header {
       color: #222;
     }
   
+    .labels {overflow: hidden;}
 
     ol li{margin-top: 10px; padding-bottom: 5px; margin-bottom: 15px; }
     /* nav & footer styles */
