@@ -35,8 +35,8 @@ app.get('/', async (req, res) => {
 
 
 app.get('/fullindex/:id', async(req, res) => {
-	const post = await Posts.findById(req.params.id)
-	res.render('fullindex', { title: 'Post', post: post});
+	const blog = await Blog.findById(req.params.id)
+	res.render('fullindex', { titulo: 'Post', blog: blog});
 });
 
 
