@@ -33,10 +33,6 @@ app.get('/', async (req, res) => {
   }
 });
 
-app.get('/full-post/:id', async(req, res) => {
-	const post = await Posts.findById(req.params.id)
-	res.render('full-post', { title: 'Post', post: post});
-});
 
 app.get('/form', (req, res) => {
   res.render('form', { titulo: 'Form' });
