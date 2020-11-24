@@ -34,7 +34,7 @@ header {
         margin: auto;
         border-bottom: dotted; overflow: hidden;}
 
-    ol li{margin-top: 10px; padding-bottom: 5px; margin-bottom: 15px; background-color:blue ;}
+    ol li{margin-top: 10px; padding-bottom: 5px; margin-bottom: 15px;}
     /* nav & footer styles */
     nav{
       display: flex;
@@ -47,7 +47,7 @@ header {
     nav ul{
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: flex-end; background-color: blue;
     }
     nav li{
       list-style-type: none;
