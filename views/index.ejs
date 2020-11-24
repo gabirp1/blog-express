@@ -4,11 +4,11 @@
 
 
         <% if (posts.length > 0) { %>
-            <div class="posts">
+            <div class="blog">
             <% posts.forEach(post => { %>
-                <div class="post">
-                    <p class="title"><%= post.title %></p>
-                    <p class="snippet"><%= post.snippet %></p>
+                <div class="blog">
+                    <p class="marca"><%= blog.marca %></p>
+                    <p class="modelo"><%= blog.modelo %></p>
                     <a href="<%= "/fullindex/"+post._id %>">View Post</a>
                 </div>
             <% }) %>
