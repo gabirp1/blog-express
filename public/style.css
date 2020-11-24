@@ -27,7 +27,7 @@ header {
   
     .labels { display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 80px 40px 40px;
+        grid-template-rows: 40px 20px 20px;
         grid-template-areas: 
         "top-left top-left title title top-right top-right"
         "left left slogan slogan right right"
