@@ -24,15 +24,13 @@ header {
       color: #222; text-decoration: none;
     }
   
-    .blog { display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 40px 20px 20px;
-        grid-template-areas: 
-        "top-left top-left title title top-right top-right"
-        "left left slogan slogan right right"
-        "bottom-left bottom-left home post bottom-right bottom-right";
-        margin: auto;
-        border-bottom: dotted; overflow: hidden; word-spacing: 2px; border-right: dotted;}
+    .blog {     display: grid;
+        grid-template-columns: calc(33% - 6px) calc(33% - 6px) calc(33% - 6px);
+        grid-row-gap: 50px;
+        grid-column-gap: 10px; margin: auto;
+        border-bottom: dotted; word-spacing: 2px; border: dotted; 
+    }
+        
     .marca {text-transform: uppercase;}
       ol li{margin-top: 10px; padding-bottom: 5px; margin-bottom: 15px;}
     /* nav & footer styles */
