@@ -25,7 +25,15 @@ header {
       color: #222;
     }
   
-    .labels {display:grid;grid-template-areas: 1fr,1fr,1fr,1fr ;overflow: hidden;}
+    .labels { display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 80px 40px 40px;
+        grid-template-areas: 
+        "top-left top-left title title top-right top-right"
+        "left left slogan slogan right right"
+        "bottom-left bottom-left home post bottom-right bottom-right";
+        margin: auto;
+        border-bottom: dotted;}
 
     ol li{margin-top: 10px; padding-bottom: 5px; margin-bottom: 15px; }
     /* nav & footer styles */
