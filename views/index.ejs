@@ -3,13 +3,13 @@
     <section>
 
 
-        <% if (posts.length > 0) { %>
+        <% if (blogs.length > 0) { %>
             <div class="blog">
-            <% posts.forEach(post => { %>
+            <% blogs.forEach(blog => { %>
                 <div class="blog">
                     <p class="marca"><%= blog.marca %></p>
                     <p class="modelo"><%= blog.modelo %></p>
-                    <a href="<%= "/fullindex/"+post._id %>">View Post</a>
+                    <a href="<%= "/fullindex/"+blog._id %>">View Post</a>
                 </div>
             <% }) %>
             </div>
