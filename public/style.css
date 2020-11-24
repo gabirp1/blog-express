@@ -32,9 +32,9 @@ header {
         "left left slogan slogan right right"
         "bottom-left bottom-left home post bottom-right bottom-right";
         margin: auto;
-        border-bottom: dotted; overflow: scroll;}
-
-    ol li{margin-top: 10px; padding-bottom: 5px; margin-bottom: 15px;}
+        border-bottom: dotted; overflow: hidden; word-spacing: 2px; border-right: dotted;}
+    .marca {text-transform: uppercase;}
+      ol li{margin-top: 10px; padding-bottom: 5px; margin-bottom: 15px;}
     /* nav & footer styles */
     nav{
       display: flex;
