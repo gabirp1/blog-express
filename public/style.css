@@ -21,7 +21,6 @@ header {
     p, h1, h2, h3, a, ul{
       margin-top: 0;
       padding: 0;
-      text-decoration: none;
       color: #222;
     }
   
@@ -64,7 +63,7 @@ header {
     footer{
       color: #777;
       text-align: center;
-      margin: 80px auto 20px;
+      margin: 80px auto 20px;background-color: coral;
     }
     h2{
       margin-bottom: 40px;
