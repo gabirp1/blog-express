@@ -21,7 +21,7 @@ header {
     p, h1, h2, h3, a, ul{
       margin-top: 0;
       padding: 0;
-      color: #222;
+      color: #222; text-decoration: none;
     }
   
     .labels { display: grid;
@@ -34,7 +34,7 @@ header {
         margin: auto;
         border-bottom: dotted; overflow: hidden;}
 
-    ol li{margin-top: 10px; padding-bottom: 5px; margin-bottom: 15px; }
+    ol li{margin-top: 10px; padding-bottom: 5px; margin-bottom: 15px; background-color:blue ;}
     /* nav & footer styles */
     nav{
       display: flex;
