@@ -45,7 +45,9 @@ app.get('/form', (req, res) => {
   res.render('form', { titulo: 'Form' });
 });
 
-
+app.get('/interfaz', (req, res) => {
+  res.render('interfaz', { title: 'Interacción con el servidor' });
+});
 
 app.post('/form', (req,res) => {
   res.redirect(307, './')
