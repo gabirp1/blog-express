@@ -6,7 +6,7 @@ const deleteRequest = document.querySelector('#delete')
 
 postRequest.addEventListener('click', async(e)=>{
     e.preventDefault()
-   const resultado = await axios.post('https://blog-express-gabi.herokuapp.com/api/blogs/',blogData)
+   const resultado = await axios.post('https://blog-express-gabi.herokuapp.com/api/blogs/', blogData)
 })
 readAllRequest.addEventListener('click', async (e)=>{
     e.preventDefault()
