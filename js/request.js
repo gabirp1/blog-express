@@ -6,7 +6,7 @@ const deleteRequest = document.querySelector('#delete')
 
 postRequest.addEventListener('click', async(e)=>{
     e.preventDefault()
-   const resultado = await axios.post('https://blog-express-gabi.herokuapp.com/api/blogs/',{data: blogPrueba})
+   const resultado = await axios.post('https://blog-express-gabi.herokuapp.com/api/blogs/',blogData)
 })
 readAllRequest.addEventListener('click', async (e)=>{
     e.preventDefault()
@@ -20,7 +20,7 @@ readRequest.addEventListener('click', async (e)=>{
 })
 updateRequest.addEventListener('click', async (e)=>{
     e.preventDefault()
-    const resultado = await axios.patch('https://blog-express-gabi.herokuapp.com/api/blogs/5fbbaf3e72dc32001794327e',{data: {marca: 'Opela'}})
+    const resultado = await axios.patch('https://blog-express-gabi.herokuapp.com/api/blogs/5fbbaf3e72dc32001794327e',{blogData: {marca: 'Opela'}})
     console.log(resultado);
 })
 deleteRequest.addEventListener('click', async (e)=>{
