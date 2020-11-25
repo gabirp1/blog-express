@@ -46,7 +46,7 @@ app.get('/form', (req, res) => {
 });
 
 app.get('/interfaz', (req, res) => {
-  res.render('interfaz', { title: 'Interacción con el servidor' });
+  res.render('interfaz', { titulo: 'Interacción con el servidor' });
 });
 
 app.post('/form', (req,res) => {
