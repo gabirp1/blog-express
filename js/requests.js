@@ -25,6 +25,7 @@ form.addEventListener('submit', async (e)=>{
         cilindrada: e.target.elements.cilindrada.value,
         combustible: e.target.elements.combustible.value,
     });
+    console.log(blogData);
 })
 
 
