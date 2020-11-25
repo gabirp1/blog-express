@@ -18,6 +18,7 @@ const blogData = {
 }
 
 form.addEventListener('submit', async (e)=>{
+    console.log(e.target)
     e.preventDefault()
     const blogData = await axios.post ('https://blog-express-gabi.herokuapp.com/api/blogs', {
         marca: e.target.elements.marca.value,
@@ -31,25 +32,25 @@ form.addEventListener('submit', async (e)=>{
 
 postRequest.addEventListener('click', async(e)=>{
     e.preventDefault()
-   const resultado = await axios.post('https://blog-express-gabi.herokuapp.com/api/blogs/', blogData)
+   const blogData = await axios.post('https://blog-express-gabi.herokuapp.com/api/blogs/', blogData)
 })
 readAllRequest.addEventListener('click', async (e)=>{
     e.preventDefault()
-    const resultado = await axios.get('https://blog-express-gabi.herokuapp.com/api/blogs/')
-    console.log(resultado);
+    const blogData = await axios.get('https://blog-express-gabi.herokuapp.com/api/blogs/')
+    console.log(blogData);
 })
 readRequest.addEventListener('click', async (e)=>{
     e.preventDefault()
-    const resultado = await axios.get('https://blog-express-gabi.herokuapp.com/api/blogs/5fbbaf3e72dc32001794327e')
-    console.log(resultado);
+    const blogData = await axios.get('https://blog-express-gabi.herokuapp.com/api/blogs/5fbbaf3e72dc32001794327e')
+    console.log(blogData);
 })
 updateRequest.addEventListener('click', async (e)=>{
     e.preventDefault()
-    const resultado = await axios.patch('https://blog-express-gabi.herokuapp.com/api/blogs/5fbbaf3e72dc32001794327e',{blogData: {marca: 'Opela'}})
-    console.log(resultado);
+    const blogData = await axios.patch('https://blog-express-gabi.herokuapp.com/api/blogs/5fbbaf3e72dc32001794327e',{blogData: {marca: 'Opela'}})
+    console.log(blogData);
 })
 deleteRequest.addEventListener('click', async (e)=>{
     e.preventDefault()
-    const resultado = await axios.delete('https://blog-express-gabi.herokuapp.com/api/blogs/5fbbaf3e72dc32001794327e')
-    console.log(resultado);
+    const blogData = await axios.delete('https://blog-express-gabi.herokuapp.com/api/blogs/5fbbaf3e72dc32001794327e')
+    console.log(blogData);
 })
