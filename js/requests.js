@@ -17,7 +17,15 @@ const blogData = {
 
 }
 
-
+form.addEventListener('submit', async (e)=>{
+    e.preventDefault()
+    const blogData = await axios.post ('https://blog-express-gabi.herokuapp.com/api/blogs', {
+        marca: e.target.elements.marca,
+        modelo: e.target.elements.modelo,
+        cilindrada: e.target.elements.cilindrada,
+        combustible: e.target.elements.combustible,
+    });
+})
 
 
 postRequest.addEventListener('click', async(e)=>{
