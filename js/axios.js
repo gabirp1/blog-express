@@ -13,17 +13,17 @@ readAllRequest.addEventListener('click', async (e)=>{
     const resultado = await axios.get('https://blog-express-gabi.herokuapp.com/api/blogs')
     console.log(resultado);
 })
-readRequest.addEventListener('click',(e)=>{
+readRequest.addEventListener('click', async (e)=>{
     e.preventDefault()
     const resultado = await axios.get('https://blog-express-gabi.herokuapp.com/api/blogs/5fbbaf3e72dc32001794327e')
     console.log(resultado);
 })
-updateRequest.addEventListener('click',(e)=>{
+updateRequest.addEventListener('click', async (e)=>{
     e.preventDefault()
     const resultado = await axios.patch('https://blog-express-gabi.herokuapp.com/api/blogs/5fbbaf3e72dc32001794327e',{data: {marca: 'Opela'}})
     console.log(resultado);
 })
-deleteRequest.addEventListener('click',(e)=>{
+deleteRequest.addEventListener('click', async (e)=>{
     e.preventDefault()
     const resultado = await axios.delete('https://blog-express-gabi.herokuapp.com/api/blogs/5fbbaf3e72dc32001794327e')
     console.log(resultado);
