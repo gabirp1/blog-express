@@ -6,11 +6,11 @@ const deleteRequest = document.querySelector('#delete')
 
 postRequest.addEventListener('click', async(e)=>{
     e.preventDefault()
-   const resultado = await axios.post('https://blog-express-gabi.herokuapp.com/api/blogs',{data: blogPrueba})
+   const resultado = await axios.post('https://blog-express-gabi.herokuapp.com/api/blogs/',{data: blogPrueba})
 })
 readAllRequest.addEventListener('click', async (e)=>{
     e.preventDefault()
-    const resultado = await axios.get('https://blog-express-gabi.herokuapp.com/api/blogs')
+    const resultado = await axios.get('https://blog-express-gabi.herokuapp.com/api/blogs/')
     console.log(resultado);
 })
 readRequest.addEventListener('click', async (e)=>{
