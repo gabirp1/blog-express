@@ -20,10 +20,10 @@ const blogData = {
 form.addEventListener('submit', async (e)=>{
     e.preventDefault()
     const blogData = await axios.post ('https://blog-express-gabi.herokuapp.com/api/blogs', {
-        marca: e.target.elements.marca,
-        modelo: e.target.elements.modelo,
-        cilindrada: e.target.elements.cilindrada,
-        combustible: e.target.elements.combustible,
+        marca: e.target.elements.marca.value,
+        modelo: e.target.elements.modelo.value,
+        cilindrada: e.target.elements.cilindrada.value,
+        combustible: e.target.elements.combustible.value,
     });
 })
 
