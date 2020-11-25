@@ -13,6 +13,24 @@ const blogData = {
 
 }
 
+
+<form id="blog" action="/api/blogs" method="POST">
+   <ul> 
+     <li><label for="marca">Marca:</label>
+    <textarea id="marca" name="marca" required rows="2" cols="70"></textarea></li>
+    <li><label for="modelo">Modelo:</label>
+    <textarea id="modelo" name="modelo" required rows="2" cols="70"></textarea></li>
+    <li><label for="cilindrada">Cilindrada:</label>
+    <textarea id="cilindrada" name="cilindrada" required rows="2" cols="70"></textarea></li>
+    <li><label for="combustible">Combustible:</label>
+    <textarea id="combustible" name="combustible" required rows="2" cols="70"></textarea></li>
+   
+    
+    <li><input type="submit" value="Crear nuevo coche"></li>
+  </ul>
+  </form>
+  
+
 postRequest.addEventListener('click', async(e)=>{
     e.preventDefault()
    const resultado = await axios.post('https://blog-express-gabi.herokuapp.com/api/blogs/', blogData)
