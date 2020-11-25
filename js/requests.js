@@ -3,6 +3,10 @@ const readRequest = document.querySelector('#readAll')
 const readRequest = document.querySelector('#read')
 const updateRequest = document.querySelector('#update')
 const deleteRequest = document.querySelector('#delete')
+const marca = document.querySelector('#marca')
+const modelo = document.querySelector('#modelo')
+const cilindrada = document.querySelector('#cilindrada')
+const combustible = document.querySelector('#combustible')
 
 
 const blogData = {
@@ -12,6 +16,7 @@ const blogData = {
     combustible: 'Gasolina'
 
 }
+
 
 
 
