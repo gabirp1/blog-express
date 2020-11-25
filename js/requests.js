@@ -4,6 +4,15 @@ const readRequest = document.querySelector('#read')
 const updateRequest = document.querySelector('#update')
 const deleteRequest = document.querySelector('#delete')
 
+
+const blogData = {
+    marca: 'Hummer',
+    modelo: 'H2',
+    cilindrada: '5000cc',
+    combustible: 'Gasolina'
+
+}
+
 postRequest.addEventListener('click', async(e)=>{
     e.preventDefault()
    const resultado = await axios.post('https://blog-express-gabi.herokuapp.com/api/blogs/', blogData)
