@@ -1,5 +1,5 @@
 const postRequest = document.querySelector('#post')
-const readRequest = document.querySelector('#readAll')
+const readAllRequest = document.querySelector('#readAll')
 const readRequest = document.querySelector('#read')
 const updateRequest = document.querySelector('#update')
 const deleteRequest = document.querySelector('#delete')
