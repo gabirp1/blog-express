@@ -46,7 +46,7 @@ readRequest.addEventListener('click', async (e)=>{
 })
 updateRequest.addEventListener('click', async (e)=>{
     e.preventDefault()
-    const blogData = await axios.patch('https://blog-express-gabi.herokuapp.com/api/blogs/5fbbaf3e72dc32001794327e',{blogData: {marca: 'Opela'}})
+    const blogData = await axios.patch('https://blog-express-gabi.herokuapp.com/api/blogs/5fbf637591bbb0001789780c',{blogData: {marca: 'Opela'}})
     console.log(blogData);
 })
 deleteRequest.addEventListener('click', async (e)=>{
